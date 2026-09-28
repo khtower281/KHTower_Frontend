@@ -5,6 +5,7 @@ import Categories from "./pages/Categories.jsx"
 import Transactions from "./pages/Transactions.jsx"
 import ProtectedRoute from "./components/ProtectedRoute.jsx"
 import Layout from "./components/Layout.jsx"
+import Contacts from "./pages/Contacts.jsx"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/transactions" element={<Transactions />} />
         <Route path="/categories" element={<Categories />} />
+        <Route path="/contacts" element={<Contacts />} />
       </Route>
 
       <Route path="*" element={<Navigate to="/" replace />} />
